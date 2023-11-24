@@ -4,32 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
+
+    <header>
+        <img class="logo" src="./Imagenes/logoGorra-removebg-preview.png" alt="logo">
+        <button id="abrir" class="abrir"><i class="bi bi-list"></i></button>
+        <nav id="nav" class="nav">
+            <button id="cerrar" class="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="lista">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quienes Somos</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Colecciones</a></li>
+                <li><a href="#">Contacto</a></li>
+                <button  id="bDark" class="button1">Modo Oscuro</button>
+            </ul>
+        </nav>
+    </header>
+
     <div CLASS="div">
         <h1 class="titulo">SUSCRÍBETE</h1>
     </div>
     <div>
         <img  class="linea" src="./Imagenes/Line.png" alt="una linea">
     </div>
-    <div class="container">
-        <div class="div2">
+    <container class="container">
+        <aside class="div2">
             <h2 class="h2">Suscríbete en nuestro newsletter y obtén el 50% de descuento en tu primera compra</h2>
             <img class="newsletter" src="./Imagenes/newsletter sin fondo.png" alt="">
-        </div>
+        </aside>
         <div class="div3">
-            <h2>EMPIEZA A VER TODO LO NUEVO QUE TRAEMOS</h2>
-            <img class="gorras" src="./Imagenes/4 gorras sin fondo.png" alt="la misma gorra en 4 diferentes angulos">
-            <input class="hola" type="email" placeholder="Ingresa tu email">
-            <button class="button">ENVIAR</button>
-            <p class="terminos">Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+            <h2 class="h22">EMPIEZA A VER TODO LO NUEVO QUE TRAEMOS</h2>
+
+           <div id="contenedorCarrusel">
+            <div class="itenCarrusel" id="item1">
+                <div class="fotos">
+                    <img class="gorras"src="./Imagenes/gorra1.jpg" alt="gorra">
+                </div>
+                <div class="flechas">
+                    <a href="#item6"><i class="flechaIz"><i class="bi bi-caret-left"></i></i></a>
+                    <a href="#item2"><i class="flechaDe"><i class="bi bi-caret-right"></i></i></a>
+                </div>
+            </div>
+            <div class="itenCarrusel" id="item2">
+                <div class="fotos">
+                    <img class="gorras" src="./Imagenes/gorra2.jpg" alt="gorra">
+                </div>
+                <div class="flechas">
+                    <a href="#item1"><i class="flechaIz"><i class="bi bi-caret-left"></i></i></a>
+                    <a href="#item3"><i class="flechaDe"><i class="bi bi-caret-right"></i></i></a>
+                </div>
+            </div>
+            <div class="itenCarrusel" id="item3">
+                <div class="fotos">
+                    <img class="gorras" src="./Imagenes/gorra3.jpg" alt="gorra">
+                </div>
+                <div class="flechas">
+                    <a href="#item2"><i class="flechaIz"><i class="bi bi-caret-left"></i></i></a>
+                    <a href="#item4"><i class="flechaDe"><i class="bi bi-caret-right"></i></i></a>
+                </div>
+            </div>
+            <div class="itenCarrusel" id="item4">
+                <div class="fotos">
+                    <img class="gorras" src="./Imagenes/gorra4.jpg" alt="gorra">
+                </div>
+                <div class="flechas">
+                    <a href="#item3"><i class="flechaIz"><i class="bi bi-caret-left"></i></i></a>
+                    <a href="#item5"><i class="flechaDe"><i class="bi bi-caret-right"></i></i></a>
+                </div>
+            </div>
+            <div class="itenCarrusel" id="item5">
+                <div class="fotos">
+                    <img class="gorras" src="./Imagenes/gorra5.jpg" alt="gorra">
+                </div>
+                <div class="flechas">
+                    <a href="#item4"><i class="flechaIz"><i class="bi bi-caret-left"></i></i></a>
+                    <a href="#item6"><i class="flechaDe"><i class="bi bi-caret-right"></i></i></a>
+                </div>
+            </div>
+            <div class="itenCarrusel" id="item6">
+                <div class="fotos">
+                    <img class="gorras" src="./Imagenes/gorra6.jpg" alt="gorra">
+                </div>
+                <div class="flechas">
+                    <a href="#item5"><i class="flechaIz"><i class="bi bi-caret-left"></i></i></a>
+                    <a href="#item1"><i class="flechaDe"><i class="bi bi-caret-right"></i></i></a>
+                </div>
+            </div>
+           </div>
+            <form id="form">
+            <label for="email"></label>
+            <input class="hola" type="email" id="email" placeholder="Ingresa tu email">
+            <input type="button" class="button" value="Enviar" onclick="validarEmail()">
+            </form>
+            <p class="error" id="error"></p>
+            <p class="terminos">Estoy de acuerdo con <a href="#">Términos y Condiciones</a></p>
             <div class="div4">
                 <img class="img" src="./Imagenes/apple.png" alt="logo apple">
                  <img class="img1" src="./Imagenes/outlook.png" alt="">
                 <img class="img" src="./Imagenes/google.png" alt="logo google">
             </div>
         </div>
-    </div>
+    </container>
+    <script src="./formulario.js"></script>
 </body>
 </html>

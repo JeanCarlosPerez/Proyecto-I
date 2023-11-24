@@ -4,19 +4,19 @@
 }
 
 body{
-    background-color: #7CE4D1;
+    background-color: white;
 }
 
 .titulo{
     font-family: "Karla-Regular", Helvetica;
-    font-size: 30px;
-   text-align: center;
-   background-color: #5056f5;
-    width: 450px;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #5056f5;
+    width: 13em;
     margin:auto;
-    padding: 6px;
-    border-radius: 6px;
-    margin-top: 30px;
+    padding: .2em;
+    border-radius: .5em;
+    margin-top: 0.3em;
     color: white;
 }
 
@@ -24,21 +24,22 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    width: 1000px;
+    margin-top: 15px;
+    width: 50em;
 }
 .div2{
     display: block;
-    width: 400px;
+    width: 20em;
+    background-color: white;
 }
 .h2{
     font-family: "Karla-Regular", Helvetica;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 1em;
 }
 
 .newsletter{
-    height: 200px;
+    height: 15em;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -46,8 +47,8 @@ body{
 
 .div3{
     background-color: #5057f547;
-    width:350px;
-    height: 385px;
+    width:21.5em;
+    height: auto;
     padding: 5px;
     border-radius: 20px
 }
@@ -55,18 +56,16 @@ body{
 .div3 h2{
     font-family: "Itim-Regular", Helvetica;
     text-align: center;
-    margin-top: 10px;
-    font-size: 24px;
-    margin-bottom: 20px;
+    margin-top: 4px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
     
 }
 
 .gorras{
-    height: 150px;
+    height: 100%;
+    width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
 }
 
 .hola{
@@ -78,9 +77,9 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 00;
+    border: 0;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 7px;
     width: 75%;
 }
 
@@ -96,20 +95,29 @@ body{
     color: #ffffff;
     font-family: "Karla-Regular", Helvetica;
     background-color: black;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 7px;
-    margin-top: 15px;
     width: 35%;
+    margin-top: 4px;
+}
+
+.button1{
+    background-color: black;
+    font-family: "Karla-Regular", Helvetica;
+    border-radius: 15px;
+    padding: 7px;
+    color: white;
 }
 
 .terminos{
-    font-size: 8px;
+    font-size: .6em;
     text-align: center;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
 .img{
-    width: 30px;
+    width: 2em;
+    height: 2em;
 }
 
 
@@ -117,17 +125,151 @@ body{
     display: flex;
     justify-content:space-around;
     padding-top: 7px;
-    height: 40px;
-    
 }
 
 .img1{
-    width: 80px;
+    width: 4em;
 }
 
 .container{
     display: flex;
     justify-content: space-around;
-    margin-top: 60px;
+    margin-top: 20px;
     align-items: center;
 }
+
+.error{
+    text-align: center;
+    margin: auto;
+    color: red;
+}
+
+.logo{
+    width: 3rem;
+    margin-left: 3rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #5057f547;
+}
+
+.lista{
+    display: flex;
+    gap: 6rem;
+    list-style-type: none;
+}
+
+.lista li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Karla-Regular", Helvetica;
+}
+
+.abrir,
+.cerrar{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .abrir,
+    .cerrar{
+        display: block;
+    }
+
+    .abrir{
+        border: 0;
+        font-size: 2.5rem;
+        background: transparent;
+        color: black;
+        cursor: pointer;
+    }
+
+    .cerrar{
+        border: 1px;
+        font-size: 2rem;
+        background: transparent;
+        color: black;
+        cursor: pointer; 
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #5058f5;
+        padding: 2rem;
+        gap: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        z-index: 5;
+    }
+
+    .visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .lista{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+}
+
+    #contenedorCarrusel{ 
+        height: 200px;
+        width: 250px;
+        overflow: hidden;
+        padding-left: 50px;
+    }
+
+    .itenCarrusel{
+        height: 100%;
+        position: relative;
+    }
+
+    .fotos{
+        height: 100%;
+    }
+
+    .flechas{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .flechaIz{
+        padding-left: 10px;
+    }
+
+    .flechaDe{
+        padding-right: 10px;
+    }
+
+    body.darkMode{
+        background-color: black;
+        color: white;
+    }
+    .h2.DMode{
+        background-color: black;
+    }
+
+
+    
