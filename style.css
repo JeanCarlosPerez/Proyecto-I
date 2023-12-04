@@ -1,82 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    background-color: #ED1D24;
+    font-family: 'Marvel', sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 3em;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 3em;
 }
 
 .imagen{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 45px;
-
-}
-
-body{
-    background-color: #7CE4D1;
-}
-
-.titulo1{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
-    font-family: "Inika-Regular", Helvetica;
-    font-size: 50px;
-    margin-top: 20px;
-
+    width: 100%;
+    height: 75%;
 }
 
-.titulo2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-    font-size: 20px;
-    font-family: "Inika-Regular", Helvetica;
+.row{
+    padding: 20px;
+    box-shadow: 0px 0px 1px #000;
 }
 
-.titulo3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-    font-size: 40px;
-    color: #171FE5;
-    text-decoration: underline;
+@media (max-width: 767px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
-.titulo4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    font-size: 20px;
-    font-family: "Inika-Regular", Helvetica;
-    margin-bottom: 20px;
-}
+/*estilo titulo*/
 
-.button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 20px;
-    color: #ffffff;
-    font-family: "Karla-Regular", Helvetica;
-    background-color: black;
-    border-radius: 20px;
-    padding: 15px;
-    margin-top: 30px;
-}
-.caja{
-    background-color: #91a8a46b;
-    width: 600px;
-    margin:auto;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.boton2{
-    text-decoration: none;
-    color: white;
+.marvel-title {
+    font-family: 'Arial', sans-serif;
+    color: #1A237E; /* Azul Marvel oscuro */
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Sombra para dar profundidad */
+    font-size: 3em; /* Tamaño grande para impacto */
+    letter-spacing: 0.05em; /* Espaciado para un estilo más dramático */
+    text-align: center; /* Alinear al centro */
 }
