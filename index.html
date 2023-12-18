@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fasshonn</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="./Imagenes/logoGorra-removebg-preview.png"/>
+    <title>Feliz Navidad</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/st-nicholas" rel="stylesheet">
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="./img/logo-removebg-preview.png"/>
 </head>
 <body>
-    <img class="imagen" src="Imagenes/gorra1.png"la misma gorra de diferente angulo">
-    <div class="caja">
-        <h1 Class="titulo1">¡Crea tu propio estilo!</h1>
-        <h2 class="titulo2">haz tu primer pedido y obten</h2>
-        <h3 class="titulo3">50%</h3>
-        <h2 class="titulo4">de descuento</h2>
+    <section class="container">
+        <h1 class="titulo">¡FELIZ NAVIDAD!</h1>
+    </section>
+    <!-- Botón para abrir el modal -->
+    <section class="container-boton">
+        <button class="boton-navidad" id="openModalBtn">¡Haz click aqui!</button>
+    </section>
+
+<!-- Modal -->
+<div id="miModal" class="modal">
+    <!-- Contenido del modal -->
+    <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <h2 class="titulo-modal">Un Mensaje Especial para Ti</h2> <br>
+        <p>Hola Dani,</p><br>
+        <p class="texto" >En esta época tan especial, quería desearte una Navidad llena de alegría y creatividad, tan brillante y única como los códigos que diseñas. Que tu pasión por las tecnologías se mezcle con la magia de estas fiestas para crear momentos inolvidables.</p><br>
+        <p class="texto" >Tu inteligencia y entusiasmo son tan contagiosos como tu encanto, y en estos días festivos, espero que encuentres tiempo para relajarte, reiniciar y recargar energías para seguir deslumbrando al mundo con tus ideas y proyectos.</p><br>
+        <p>Con Cariño, Jean Carlos</p><br>
+        <h3 class="navidad">¡Feliz Navidad y un próspero Año Nuevo lleno de código, creatividad y felicidad!</h3>
     </div>
-    <button class="button"> <a  class="boton2" href="./formulario.html">OBTENER </a></button>
+</div>
 </body>
+<script src="./script.js"></script>
 </html>
